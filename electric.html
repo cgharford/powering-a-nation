@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electric Power</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </style>
+  </head>
+  <body>
+     <header class="row">
+        <!--Header entire Powering a Nation logo for lg, md, and sm screen sizes-->
+        <!--logo is a link to the home page-->
+    	<div class="hidden-xs col-lg-7 col-sm-12">
+            <a href="index.html"><img class="resizeBigLogo" src="img/logo.jpg" alt="Logo"></a>
+            <br>
+        </div>
+        <!--Header partial Powering a Nation logo for xs or mobile screen size-->
+        <!--logo is a link to the home page-->
+        <div class="visible-xs col-xs-6">
+            <a href="index.html"><img class="resizeSmallLogo" src="img/LogoSmall.jpg" title="Powering a Nation" alt="Logo"></a>
+            <br>
+        </div>
+        <!--If a mobile screen size, the menu will be a dropdown from a glyphicon button in the top right corner-->
+        <div class="visible-xs col-xs-6" id="MenuAlign">
+            <div class="dropdown">
+                 <div class="dropdownMenu">
+                    <button type="button" class="btn btn-default btn-lg" id="DropDownMenuButton" data-toggle="dropdown" aria-expanded="true">
+                         <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Home</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="coal.html">Coal Power</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="wind.html">Wind Power</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="electric.html">Electric Power</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="energy.html">Energy FAQ</a></li>
+                    </ul>
+                 </div>
+            </div>
+            <br>
+        </div>
+        <!--Caption to the right or below the logo, depending on the screen size-->
+        <div id="logoCaption" class="hidden-xs col-lg-5">
+          The quest for energy in a changing USA
+          <br>
+        </div>
+        <div id="logoCaptionSmall" class="visible-xs col-xs-12">
+          The quest for energy in a changing USA <br>
+          <br>
+        </div>   
+    </header>
+  <!--This is the navigational bar for all but mobile screen sizes-->
+  <div class="hidden-xs" id="navcontainer" >
+      <ul id="navlist">
+           <li id="active"><a href="index.html">Home</a></li>
+           <li><a href="coal.html">Coal Power</a></li>
+           <li><a href="wind.html">Wind Power</a></li>
+           <li><a href="electric.html" id="current">Electric Power</a></li>
+           <li><a href="energy.html">Energy FAQ</a></li>
+      </ul>
+  </div>
+  
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <!--Responsive video title-->
+    <div class="hidden-xs">
+      <div class="videoHeader">
+	Down the Lines
+      </div>
+    </div>
+    <div class="visible-xs">
+      <div class="videoHeaderSmall">
+	Down the Lines <br> 
+      </div>
+    </div>
+    
+    <!--iframe container for video-->
+     <div class="video-container">   <!-- open elastic video container -->
+        <iframe src="https://player.vimeo.com/video/7645659?color=ffffff&title=0&byline=0&portrait=0" width="850" height="600" allowFullScreen></iframe>
+    </div>     <!-- close elastic video container -->
+    
+     <!--Responsive caption below video-->
+    <div class="hidden-xs"> 
+        <div class="videoStory">
+       The U.S. energy grid is in trouble. The crumbling infrastructure and lag in construction of power lines <br> 
+       have set the stage for more serious and frequent blackouts in the coming years.<br> <br> <br> 
+        </div>
+    </div>
+    <div class="visible-xs"> 
+        <div class="videoStorySmall">
+       The U.S. energy grid is in trouble. The crumbling infrastructure and lag in construction of power lines <br> 
+       have set the stage for more serious and frequent blackouts in the coming years.<br> <br> <br> 
+        </div>
+    </div>
+ 
+    <!--Two different sizes for title, byline, article, picture, and swf file depending on screen size-->
+    <div class="article">
+        <div class="hidden-xs"> 
+            <h1 class="articleTitle">
+                <br> <br> Smart Grid Could Re-energize an Aging System
+            </h1>
+        </div>
+        <div class="visible-xs"> 
+            <h1 class="articleTitleSmall">
+                <br> <br> Smart Grid Could Re-energize an Aging System <br> <br> 
+            </h1>
+        </div>
+        <div class="hidden-xs"> 
+            <p class="articleByline">
+                By Courtney Woo
+            </p>
+        </div>
+        <div class="visible-xs"> 
+            <p class="articleBylineSmall">
+                By Courtney Woo <br> <br> 
+            </p>
+        </div>
+         <div class="hidden-xs"> 
+                <p class="article">
+                    At 5 p.m. after a long day&#39;s work, you drive your plug-in electric car to your garage. The car&#39;s battery is fairly full because you drove little today. You plug your car into a charging station, but rather than recharge, you de-charge, pumping excess energy back into the power grid system and helping meet peak energy demand.  <br><br>
+        
+        
+                    <q>It&#39;s like the Internet,</q> says Dr. Alex Huang, an electrical engineering professor at North Carolina State University, &#34;but rather than share bits of information&#45;such as Twitter messages and YouTube links&#45;you share electrons.&#34; <br><br>
+                    
+                    Sharing energy is just one use of what has been dubbed the Smart Grid, a leaner, more intelligent version of the existing grid. As envisioned, it would use information technology and two-way digital communications to increase grid productivity, diagnose and treat its own problems, and allow consumers to better manage their energy use.  <br><br>
+                    
+                    Experts claim this technology will save money for both consumers and utilities and will reduce greenhouse gas emissions. The Department of Energy, for example, estimates that increasing the grid&#39;s efficiency by 5 percent would be the equivalent of removing 53 million cars from the road. But some observers note the high cost of equipment to operate a smart grid system could short-circuit the effort.<br><br>
+                    
+                    The way the grid stands now, utilities transmit power whenever a user flips a switch. Companies cannot monitor where the energy actually goes or where it is lost along the lines. During peak hours, companies meet demand by using backup &#34;peaker plants,&#34; such as coal-fired power plants, or by buying energy on the stock market. The expense eventually is passed to the consumer, and because the backup system generally relies on dirtier generation methods, it produces more carbon. <br><br>
+                    
+                    Homes with smart meters connected to the Smart Grid could help to reduce lost power and save money. For example, a consumer could program his or her air-conditioning system to raise the thermostat in warm weather when demand for air conditioning rises or prices are high. <br><br>
+                
+                 </p>
+                    <!--photo embedded within article-->
+                    <center><img class="gridPhoto" src="img/gridpic.jpg" alt="grid" width="800" height="600"></center>
+                     
+                     <!--caption below grid photo-->
+                    <div class="gridPhotoCut"> <br> Xiaohu Zhou, a Ph.D. student in electrical engineering at North Carolina State University, is working on a power electronics converter for a plug-in hybrid electric vehicle charging station. A charging station allows electricity to
+                     flow in and out of the grid, making cars a source of electricity storage. (Photo by Eileen Mignoni) <br> <br> 
+                    </div>
+                    
+                <p class="article">
+                    The Smart Grid could also increase access to distributed generation, or on-site renewable energy sources. Huang envisions intelligent homes equipped with small-scale solar generation units that could feed a large battery located at the edge of town. <br><br>
+                    
+                    &#34;When demand is high, it&#39;s more economical to use energy stored in a battery rather than turn on a coal-fired power plant,&#34; Huang says. In addition to his work at North Carolina State University, Huang directs the National Science Foundation&#39;s FREEDM Systems Center, which is developing Smart Grid components capable of storing and distributing renewable energy.<br><br>
+                    
+                    These transitions will not happen overnight. <br><br>
+                
+                    
+                    The Department of Energy would like to see a comprehensive national Smart Grid by 2030. In northern Kentucky and parts of Ohio, Duke Energy, the nation&#39;s third largest electric utility, will install 700,000 electric smart meters and 450,000 natural gas smart meters during the next five to seven years. The installation will cover 84 percent of Duke Energy&#39;s utility customers in these two states.<br><br>
+                    Developing this system is also costly. Although Duke Energy has allocated $1 billion for hardware installation in Ohio, Indiana and the Carolinas over five years, these funds &#34;won&#39;t build our entire service area,&#34; says Paige Layne, the marketing communications manager for Smart Grid technology at Duke Energy.
+                    
+                    The future cost to consumers will vary by state. In Ohio, for example, consumer rates increased 50 cents per month this year and will increase by $1.50 in 2010. But since customers will be better able to manage their consumption with Smart Grid technology, the bills will go down, says David Mohler, vice president and chief technology officer for Duke Energy. Last year, 35 participants in a pilot study in Cincinnati reduced their consumption by 10 to 20 percent.<br><br>
+                    
+                    The biggest challenge is battery technology, Mohler says. Vehicle batteries require a carrying capacity thousands of times that of a cell phone battery. Engineers have yet to develop one that is both cheap and reliable.
+                    
+                    Still, pilot projects provide a glimpse of the future. <br><br>
+                    
+                     Xcel Energy aims to make Boulder, Colo., the first &#34;smart&#34; city by the end of 2009. And Duke Energy has already launched a self-healing grid in Hendersonville, N.C. When a tree fell on Duke Energy lines in June 2009, a nearby network station sensed and isolated the problem area. The station sent an automatic SOS to Duke Energy, quarantined the outage, and rerouted power to affected homes and businesses in a matter of seconds.<br><br>
+                    
+                    Without this intelligence, homeowners must report disruptions to the power company. Then a team of linemen rides the lines&#45;through forests and up mountains with flashlights if necessary&#45;to locate the injury. In the Hendersonville case, an additional 1,500 customers would have lost power. <br><br>
+                    
+                    &#34;With Smart Grid, you don&#39;t have to worry,&#34; says Huang, &#34;because software and communication take over.&#34; <br><br>
+                
+                    
+                    But developing a Smart Grid system alone will not solve all the problems of the existing grid or eliminate the need for additional power lines to acquire electricity from renewable resources, Mohler says. &#34;Ultimately, we need to do both.&#34; <br><br>
+        
+                    <!--Interactive infographic-->
+                    <!--Informs user if browser does not have correct flash player-->
+                    <div class="row">
+                    <div class="span8">
+                    <div class="embed-container">
+                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  align="middle" id="FlashID" title="Graphic:How it works">
+                              <param name="movie" value="../grid.swf">
+                              <param name="quality" value="high">
+                              <param name="wmode" value="opaque">
+                              <param name="swfversion" value="9.0.45.0">
+                              <param name="expressinstall" value="Scripts/expressInstall.swf">
+                              <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                              <!--[if !IE]>-->
+                              <object data="img/grid.swf" type="application/x-shockwave-flash" width="660" height="371" align="middle">
+                                <!--<![endif]-->
+                                <param name="quality" value="high">
+                                <param name="wmode" value="opaque">
+                                <param name="swfversion" value="9.0.45.0">
+                                <param name="expressinstall" value="Scripts/expressInstall.swf">
+                                <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                                <div>
+                                  <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                                  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                                </div>
+                                <!--[if !IE]>-->
+                              </object>
+                              <!--<![endif]-->
+                            </object>
+ 
+                    </div><!--container-->
+                    </div><!--span8-->
+                    </div><!--row-->
+                    
+                    <!--Caption below interactive infographic-->
+                    <div class="gridcut" hspace="10">
+                    Source: Warkentin-Glenn, Denise. Electric Power Industry in Nontechnical Language. New York: PennWell Corp., 2006.
+                    Graphic by Ashley Zammitt. </div> <br>               
+                   
+                </p>
+        </div>
+         
+          <div class="visible-xs"> 
+                <p class="articleSmall">
+                    At 5 p.m. after a long day&#39;s work, you drive your plug-in electric car to your garage. The car&#39;s battery is fairly full because you drove little today. You plug your car into a charging station, but rather than recharge, you de-charge, pumping excess energy back into the power grid system and helping meet peak energy demand.  <br><br>
+        
+        
+                    <q>It&#39;s like the Internet,</q> says Dr. Alex Huang, an electrical engineering professor at North Carolina State University, &#34;but rather than share bits of information&#45;such as Twitter messages and YouTube links&#45;you share electrons.&#34; <br><br>
+                    
+                    Sharing energy is just one use of what has been dubbed the Smart Grid, a leaner, more intelligent version of the existing grid. As envisioned, it would use information technology and two-way digital communications to increase grid productivity, diagnose and treat its own problems, and allow consumers to better manage their energy use.  <br><br>
+                    
+                    
+                    Experts claim this technology will save money for both consumers and utilities and will reduce greenhouse gas emissions. The Department of Energy, for example, estimates that increasing the grid&#39;s efficiency by 5 percent would be the equivalent of removing 53 million cars from the road. But some observers note the high cost of equipment to operate a smart grid system could short-circuit the effort.<br><br>
+                    
+                    The way the grid stands now, utilities transmit power whenever a user flips a switch. Companies cannot monitor where the energy actually goes or where it is lost along the lines. During peak hours, companies meet demand by using backup &#34;peaker plants,&#34; such as coal-fired power plants, or by buying energy on the stock market. The expense eventually is passed to the consumer, and because the backup system generally relies on dirtier generation methods, it produces more carbon. <br><br>
+                    
+                    Homes with smart meters connected to the Smart Grid could help to reduce lost power and save money. For example, a consumer could program his or her air-conditioning system to raise the thermostat in warm weather when demand for air conditioning rises or prices are high. <br><br>
+                    
+                    The Smart Grid could also increase access to distributed generation, or on-site renewable energy sources. Huang envisions intelligent homes equipped with small-scale solar generation units that could feed a large battery located at the edge of town. <br><br>
+                    
+                </p>   
+                   <!--photo embedded within article-->
+                   <img class="gridPhoto" src="img/gridpic.jpg" alt="grid">
+                    
+                    <!--caption below grid photo-->
+                    <div class="gridcutMobile"> <br> Xiaohu Zhou, a Ph.D. student in electrical engineering at North Carolina State University, is working on a power electronics converter for a plug-in hybrid electric vehicle charging station. A charging station allows electricity to
+                     flow in and out of the grid, making cars a source of electricity storage. (Photo by Eileen Mignoni) <br> <br> <br> 
+                    </div>
+                    
+                    <p class="articleSmall">
+                    &#34;When demand is high, it&#39;s more economical to use energy stored in a battery rather than turn on a coal-fired power plant,&#34; Huang says. In addition to his work at North Carolina State University, Huang directs the National Science Foundation&#39;s FREEDM Systems Center, which is developing Smart Grid components capable of storing and distributing renewable energy.<br><br>
+                    
+                    These transitions will not happen overnight. <br><br>
+                    
+                    The Department of Energy would like to see a comprehensive national Smart Grid by 2030. In northern Kentucky and parts of Ohio, Duke Energy, the nation&#39;s third largest electric utility, will install 700,000 electric smart meters and 450,000 natural gas smart meters during the next five to seven years. The installation will cover 84 percent of Duke Energy&#39;s utility customers in these two states.<br><br>
+                    Developing this system is also costly. Although Duke Energy has allocated $1 billion for hardware installation in Ohio, Indiana and the Carolinas over five years, these funds &#34;won&#39;t build our entire service area,&#34; says Paige Layne, the marketing communications manager for Smart Grid technology at Duke Energy.
+                    
+                    The future cost to consumers will vary by state. In Ohio, for example, consumer rates increased 50 cents per month this year and will increase by $1.50 in 2010. But since customers will be better able to manage their consumption with Smart Grid technology, the bills will go down, says David Mohler, vice president and chief technology officer for Duke Energy. Last year, 35 participants in a pilot study in Cincinnati reduced their consumption by 10 to 20 percent.<br><br>
+                    
+                    The biggest challenge is battery technology, Mohler says. Vehicle batteries require a carrying capacity thousands of times that of a cell phone battery. Engineers have yet to develop one that is both cheap and reliable.
+                    
+                    Still, pilot projects provide a glimpse of the future. <br><br>
+                    
+                    
+                     Xcel Energy aims to make Boulder, Colo., the first &#34;smart&#34; city by the end of 2009. And Duke Energy has already launched a self-healing grid in Hendersonville, N.C. When a tree fell on Duke Energy lines in June 2009, a nearby network station sensed and isolated the problem area. The station sent an automatic SOS to Duke Energy, quarantined the outage, and rerouted power to affected homes and businesses in a matter of seconds.<br><br>
+                    
+                    Without this intelligence, homeowners must report disruptions to the power company. Then a team of linemen rides the lines&#45;through forests and up mountains with flashlights if necessary&#45;to locate the injury. In the Hendersonville case, an additional 1,500 customers would have lost power. <br><br>
+                    
+                    &#34;With Smart Grid, you don&#39;t have to worry,&#34; says Huang, &#34;because software and communication take over.&#34; <br><br>
+                    
+                    But developing a Smart Grid system alone will not solve all the problems of the existing grid or eliminate the need for additional power lines to acquire electricity from renewable resources, Mohler says. &#34;Ultimately, we need to do both.&#34; <br><br>
+        
+                     <!--Interactive infographic-->
+                    <!--Informs user if browser does not have correct flash player-->
+                    <div class="row">
+                    <div class="span8">
+                    <div class="embed-container">
+                            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  align="middle" id="FlashID" title="Graphic:How it works">
+                              <param name="movie" value="../grid.swf">
+                              <param name="quality" value="high">
+                              <param name="wmode" value="opaque">
+                              <param name="swfversion" value="9.0.45.0">
+                              <param name="expressinstall" value="Scripts/expressInstall.swf">
+                              <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                              <!--[if !IE]>-->
+                              <object data="img/grid.swf" type="application/x-shockwave-flash" width="660" height="371" align="middle">
+                                <!--<![endif]-->
+                                <param name="quality" value="high">
+                                <param name="wmode" value="opaque">
+                                <param name="swfversion" value="9.0.45.0">
+                                <param name="expressinstall" value="Scripts/expressInstall.swf">
+                                <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                                <div>
+                                  <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                                  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                                </div>
+                                <!--[if !IE]>-->
+                              </object>
+                              <!--<![endif]-->
+                            </object>
+ 
+                    </div><!--container-->
+                    </div><!--span8-->
+                    </div><!--row-->
+                    
+                    <!--Caption below interactive infographic-->
+                    <div class="gridcutMobile" hspace="10">
+                    Source: Warkentin-Glenn, Denise. Electric Power Industry in Nontechnical Language. New York: PennWell Corp., 2006.
+                    Graphic by Ashley Zammitt. </div> <br>
+                
+                </p>
+        </div>
+    </div>
+    
+    <!--Footer with credits-->
+    <footer class="row">
+        <div class="col-lg-12 col-sm-12">
+             <p class="footer"><br><br><br> &copy; Powering A Nation 2015 &#160; <i class="glyphicon glyphicon-option-vertical"></i> &#160;
+             Video by Eileen Mignoni and Courtney Woo &#160;<i class="glyphicon glyphicon-option-vertical"></i>&#160;
+             Introduction written by Sarah Peach &#160;<i class="glyphicon glyphicon-option-vertical"></i>&#160; Site designed and created by Christina Harford</p>
+        </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body> 
+</html>

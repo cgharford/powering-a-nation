@@ -1,0 +1,473 @@
+body {
+    /* This is the fixed background image*/
+    background:url(../img/blackbackground.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*Default fonts, colors, sizes, etc.*/
+    text-indent: 0px;
+    color: white;
+    font-family: Arial, Verdana, Georgia; 
+    font-size: 150%;
+    font-size: 1vw;
+}
+
+/* The big logo for the lg, md, and sm screen sizes*/
+img.resizeBigLogo{ 
+   max-width:100%;
+   max-height:100%;
+}
+
+/* The big logo for the xs screen size*/
+img.resizeSmallLogo{
+   position: relative;
+   max-width:23%;
+   max-height:23%;
+   margin-left: 20px;
+}
+
+/*Positioned to the right side of the logo when screen
+ *is lg, centered below logo when screen is sm*/
+#logoCaption {
+    position: relative;
+    text-align: center;
+    color: #ffaf41;
+    line-height: 500%;
+    font-size: 1.75em;
+}
+
+/*Centered below logo and menu button when screen is xs*/
+#logoCaptionSmall {
+    position: relative;
+    text-align: center;
+    color: white;
+    line-height: 150%;
+    font-size: 3.75em;
+}
+
+/* This is the navigational bar at the top*/
+/* It can be seen on lg, md, and sm screen sizes*/
+#navcontainer {
+    font-family: Arial,Sans-Serif;
+    margin: 0 auto;
+    width: 70%;
+    line-height: 600%;
+    border-bottom: 1px none #ddd;
+}
+
+#navlist {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+}
+
+#navlist li {
+    padding: 0;
+    margin: 0;
+    text-indent: 0;
+    display: inline;
+}
+
+#navlist li a {
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.5em;
+    padding: 0 2px;
+    border-top: .25em solid #eee;
+}
+
+/*This changes the font color and removes the bar on
+ *top when your mouse hovers over the menu option*/
+#navlist li a:hover,#navlist a#current {
+    color: #333;
+    border-top: none;
+}
+/*End of navigational bar style*/
+
+/*The menu option for the page that the user is currently
+ *on changes color to orange and has a larger font size*/
+#navlist a#current {
+    color: #ffaf41;
+    font-size: 1.75em;
+}
+/* End of style for the navigation bar*/
+
+/*This is the mobile dropdown menu for when the screen is xs*/
+#MenuAlign {
+    position: relative;
+    max-width:100%;
+    max-height:100%;
+    text-align: right;
+}
+
+/*Style for menu glyphicon*/
+#DropDownMenuButton {
+    position: relative;
+    text-align: right;
+    background-color: black;
+    border: none;
+    color: #ffaf55;
+    font-size: 9.5em;
+}
+
+/*Keeps the dropdown menu below the menu button
+ *regardless of screen size changes*/
+ul.dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+/*Text style for lg, md, and sm screen sizes*/
+.homePageStoryHeader {
+    font-size: 250%;
+    color: #ffaf41;
+    position: relative;
+    margin-left: 6em;
+}
+
+/*Text style for xs screen size*/
+.homePageStoryHeaderSmall {
+    font-size: 250%;
+    color: #ffaf41;
+    position: relative;
+    text-align: center;
+    font-size: 4em;
+}
+
+/*Text style for lg, md, and sm screen sizes*/
+.homePageStory {
+    color: grey;
+    position: relative;
+    margin-left: 20em;
+}
+
+/*Text style for xs screen size*/
+.homePageStorySmall {
+    color: grey;
+    position: relative;
+    margin-left: 4em;
+    margin-right: 4em;
+    font-size: 3.5em;
+}
+/*Styles the carousel of pictures on the homepage*/
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 75%;
+      margin: auto;
+}
+
+/*Styles the captions of the carousel of pictures associated with the
+ *articles on the home page*/
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    color: black;
+    text-align: left;
+    font-size: 1em;
+}
+/*For the caption title*/
+.captionHeader {
+    position: relative;
+    color: black;
+    font-size: 3em;
+}
+/*For the caption title on a mobile screen size*/
+.captionHeaderMobile {
+    position: relative;
+    color: black;
+    font-size: 3.75em;
+}
+
+/*Alternative header size for different picture needs*/
+.captionHeader2 {
+    position: relative;
+    color: black;
+    font-size: 2em;
+}
+
+/*Alternative header size for different mobile screen size*/
+.captionStoryMobile {
+    position: relative;
+    font-size: 2em;
+}
+/*End of carousel style*/
+
+/*Styles the footer with credits on each web page*/
+.footer {
+    text-align: center;
+    border-top: 1px none #ddd;
+}
+
+/*Title for videos on each subpage for lg, md, and sm screen sizes */
+.videoHeader {
+    text-align: center;
+    font-size: 300%;
+    color: #888888;
+    font-family: Georgia;
+}
+
+/*Title for videos on the mobile screen size*/
+.videoHeaderSmall {
+    text-align: center;
+    font-size: 600%;
+    line-height: 250%;
+    color: white;
+    font-family: Georgia;
+}
+
+/* Style for the brief caption below each video*/
+.videoStory {
+    position: relative;
+    margin-left: 3em;
+    margin-right: 3em;
+    text-align: center;
+    font-size: 125%;
+    color: #ffaf41;
+}
+/*Stle for the brief caption below each video on xs screen size*/
+.videoStorySmall {
+    position: relative;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    font-size: 3em;
+    color: #ffaf41;
+}
+
+/*The title of the electric grid article*/
+.articleTitle {
+    position: relative;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: white;
+    font-size: 2em;
+}
+
+/*The title of the electric grid article for mobile*/
+.articleTitleSmall {
+    position: relative;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    font-size: 400%;
+}
+
+/*Author of the article*/
+.articleByline {
+    position: relative;
+    margin-left: 15em;
+    color: #3d3d3d;
+}
+
+/*Author of the article for mobile*/
+.articleBylineSmall {
+    position: relative;
+    margin-left: 3em;
+    color: #3d3d3d;
+    font-size: 300%;
+}
+
+
+/*Article content for electric page*/
+.article {
+    position: relative;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: grey;
+    line-height: 150%;
+}
+/*Article content for mobile electric page*/
+.articleSmall {
+    position: relative;
+    margin-left: .5em;
+    margin-right: .5em;
+    color: grey;
+    line-height: 150%;
+    font-size: 350%;
+}
+/*Box that energy article sits in on the Energy FAQ webpage*/
+/*Text contained by a semi-transparent white box*/
+.FAQarticle {
+    position: relative;
+    background-color: white;
+    border: 5px #ffaf41;
+    background: rgb(204, 204, 204); /* Makes background semi-transparent, but not text */
+    background: rgba(204, 204, 204, 0.25);
+    color: black;
+    line-height: 150%;
+}
+
+.FAQHeader {
+    position: relative;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: black;
+    line-height: 150%;
+}
+
+/*3 sentence intro for FAQ*/
+.FAQinfo {
+    position: relative;
+    color: black;
+    line-height: 150%;
+    text-align: center;
+    font-size: 130%;
+    margin: 1em;
+}
+
+/*3 sentence intro for FAQ on mobile screen size*/
+.FAQinfoSmall {
+    position: relative;
+    color: grey;
+    line-height: 150%;
+    text-align: center;
+    font-size: 3.5em;
+    margin: .75em;
+}
+
+/*Style for questions on the FAQ page*/
+.question {
+    position: relative;
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 200%;
+    color: #ffa71c;
+    line-height: 100%;
+}
+
+/*Style for questions on the FAQ page for mobile size*/
+.questionSmall {
+    position: relative;
+    margin-left: .5em;
+    margin-right: .5em;
+    font-size: 500%;
+    color: #ffa71c;
+    line-height: 100%;
+}
+
+/*Style for answers on the FAQ page*/
+.answer {
+    position: relative;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: grey;
+    font-size: 130%;
+    line-height: 150%;
+}
+
+/*Style for answers on the FAQ page for mobile size*/
+.answerSmall {
+    position: relative;
+    margin-left: .5em;
+    margin-right: .5em;
+    color: white;
+    font-size: 350%;
+    line-height: 150%;
+}
+
+/* This is the container for the grid.swf file */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+	
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 99%;
+        border: 0;
+}
+/*End of style for the grid.swf file*/
+
+/*Style for picture in the middle of the grid article*/
+.gridPhoto {
+    position: relative;
+    max-height: 100%;
+    max-width: 100%;
+   margin: auto;
+}
+
+/*Style for picture citation below the grid photo on the grid page*/ 
+.gridcaption {
+    position: relative;
+    float: right;
+    margin: 1%;
+    max-height: 100%;
+    max-width: 99%;
+    color: #ffaf41;
+    font-style: italic;
+    font-size: 100%;
+    text-align: center;
+}
+
+/*Style for grid.swf citation below the file on the grid page*/ 
+.gridcut {
+    position: relative;
+    font-size: 100%;
+    font-style:oblique;
+    color:#ffaf41;
+    text-align: center;
+    line-height: 150%;
+}
+
+/*Grid photo citation*/
+.gridPhotoCut {
+ position: relative;
+    font-size: 100%;
+    font-style:oblique;
+    color:#ffaf41;
+    text-align: center;
+    line-height: 150%;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
+/*Style for grid.swf citation below the file on the grid page for mobile*/ 
+.gridcutMobile {
+    position: relative;
+    font-size: 350%;
+    font-style:oblique;
+    color:#ffaf41;
+    text-align: center;
+    line-height: 125%;
+    
+}
+
+/* This is for the videos on all of the subpages */
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+	overflow: hidden;
+        margin-left: 10em;
+        margin-right: 10em;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+        position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 99%;
+        margin: auto;
+	background:#000;
+        border: 0;
+}
+/* End of style for the iframe videos */
